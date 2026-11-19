@@ -1,0 +1,1273 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>徐婉韩国吃瓜 - 原创影像|社区热点与深度观察</title>
+<meta name="description" content="徐婉韩国吃瓜官方网站，聚焦城市见闻与热点观察的原创视频社区，汇聚创作者精品内容与真实故事，打造值得信赖的视频品牌平台。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f0b429'/%3E%3Cpath d='M24 18l20 14-20 14z' fill='%23211d18'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --xw-bg:#fbf7ef;
+    --xw-paper:#ffffff;
+    --xw-ink:#241f19;
+    --xw-ink-soft:#5d5348;
+    --xw-amber:#e8a020;
+    --xw-amber-deep:#b87407;
+    --xw-clay:#8c5a3c;
+    --xw-line:#e8ddc9;
+    --xw-shadow:0 10px 34px rgba(80,55,20,.10);
+    --xw-radius:18px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;scroll-padding-top:118px;}
+  body{
+    margin:0;
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+    background:var(--xw-bg);
+    color:var(--xw-ink);
+    line-height:1.75;
+    font-size:16px;
+  }
+  h1,h2,h3,h4{margin:0;line-height:1.3;font-weight:700;}
+  p{margin:0 0 12px;}
+  a{color:inherit;text-decoration:none;}
+  ul{margin:0;padding:0;list-style:none;}
+  button{font-family:inherit;cursor:pointer;border:none;background:none;}
+  img{display:block;max-width:100%;}
+
+  /* ===== 吸顶头部组合 ===== */
+  .xw-topbar{
+    position:sticky;top:0;z-index:90;
+  }
+  .xw-notice{
+    background:linear-gradient(90deg,#241f19,#463525);
+    color:#f7ead2;
+    font-size:13.5px;
+    padding:9px 20px;
+    display:flex;align-items:center;gap:12px;
+    overflow:hidden;
+  }
+  .xw-notice__tag{
+    flex:0 0 auto;
+    background:var(--xw-amber);
+    color:#241f19;
+    font-weight:700;
+    font-size:12px;
+    padding:1px 9px;
+    border-radius:999px;
+    letter-spacing:.5px;
+  }
+  .xw-notice__track{
+    overflow:hidden;white-space:nowrap;flex:1;
+  }
+  .xw-notice__item{opacity:0;display:none;}
+  .xw-notice__item.is-on{opacity:1;display:inline-block;animation:xwFade .5s ease;}
+  @keyframes xwFade{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:none;}}
+
+  .xw-header{
+    background:rgba(251,247,239,.94);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--xw-line);
+  }
+  .xw-header__inner{
+    max-width:1200px;margin:0 auto;padding:12px 20px;
+    display:flex;align-items:center;gap:18px;
+  }
+  .xw-logo{display:flex;align-items:center;gap:10px;flex:0 0 auto;}
+  .xw-logo__mark{
+    width:38px;height:38px;border-radius:11px;
+    background:var(--xw-amber);
+    display:grid;place-items:center;
+    box-shadow:0 4px 12px rgba(184,116,7,.35);
+  }
+  .xw-logo__mark svg{width:20px;height:20px;}
+  .xw-logo__text b{display:block;font-size:17px;letter-spacing:.5px;}
+  .xw-logo__text span{display:block;font-size:11px;color:var(--xw-ink-soft);letter-spacing:2px;}
+  .xw-nav{display:flex;gap:4px;flex-wrap:wrap;margin-left:8px;}
+  .xw-nav a{
+    font-size:14.5px;padding:6px 12px;border-radius:999px;
+    color:var(--xw-ink-soft);transition:.22s;
+  }
+  .xw-nav a:hover{background:#f3e7cf;color:var(--xw-ink);}
+  .xw-search{
+    margin-left:auto;
+    display:flex;align-items:center;gap:6px;
+    background:#fff;border:1px solid var(--xw-line);border-radius:999px;
+    padding:5px 6px 5px 14px;flex:0 1 250px;
+  }
+  .xw-search input{
+    border:none;outline:none;background:none;font-size:14px;width:100%;
+    color:var(--xw-ink);
+  }
+  .xw-search button{
+    background:var(--xw-amber);border-radius:999px;padding:5px 13px;
+    font-size:13.5px;font-weight:700;color:#241f19;
+  }
+  .xw-burger{display:none;font-size:22px;color:var(--xw-ink);}
+  .xw-search-feedback{
+    max-width:1200px;margin:0 auto;padding:0 20px;
+    font-size:13px;color:var(--xw-amber-deep);
+    height:0;overflow:hidden;transition:.25s;
+  }
+  .xw-search-feedback.is-on{height:26px;padding-top:4px;}
+
+  /* ===== 通用容器 ===== */
+  .xw-wrap{max-width:1200px;margin:0 auto;padding:0 20px;}
+  .xw-section{padding:64px 0;}
+  .xw-section--alt{background:#fff;border-top:1px solid var(--xw-line);border-bottom:1px solid var(--xw-line);}
+  .xw-eyebrow{
+    display:inline-block;font-size:12.5px;letter-spacing:2px;
+    color:var(--xw-amber-deep);font-weight:700;margin-bottom:10px;
+  }
+  .xw-sec-head{max-width:760px;margin-bottom:34px;}
+  .xw-sec-head h2{font-size:clamp(23px,3vw,31px);letter-spacing:.5px;}
+  .xw-sec-head p{color:var(--xw-ink-soft);font-size:15px;margin-top:10px;}
+  .xw-sec-head--row{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;max-width:none;flex-wrap:wrap;}
+  .xw-btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:11px 24px;border-radius:999px;font-size:14.5px;font-weight:700;
+    transition:.22s;border:1.5px solid transparent;
+  }
+  .xw-btn--solid{background:var(--xw-ink);color:#fbf7ef;}
+  .xw-btn--solid:hover{background:var(--xw-amber-deep);}
+  .xw-btn--ghost{border-color:var(--xw-ink);color:var(--xw-ink);}
+  .xw-btn--ghost:hover{background:var(--xw-ink);color:#fbf7ef;}
+  .xw-btn--amber{background:var(--xw-amber);color:#241f19;}
+  .xw-btn--amber:hover{background:var(--xw-amber-deep);color:#fff;}
+
+  /* ===== 首屏 ===== */
+  .xw-hero{padding:52px 0 40px;}
+  .xw-hero__grid{
+    display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;
+  }
+  .xw-hero__badge{
+    display:inline-flex;align-items:center;gap:8px;
+    background:#f6e6c6;color:var(--xw-amber-deep);
+    font-size:12.5px;font-weight:700;letter-spacing:1px;
+    padding:5px 14px;border-radius:999px;margin-bottom:18px;
+  }
+  .xw-hero h1{
+    font-size:clamp(34px,5vw,54px);letter-spacing:2px;line-height:1.15;
+  }
+  .xw-hero h1 em{
+    font-style:normal;
+    background:linear-gradient(180deg,transparent 62%,#f6cf7a 62%);
+    padding:0 4px;
+  }
+  .xw-hero__slogan{
+    font-size:17px;color:var(--xw-clay);font-weight:600;margin:16px 0 14px;letter-spacing:.5px;
+  }
+  .xw-hero__intro{color:var(--xw-ink-soft);font-size:15px;max-width:560px;}
+  .xw-hero__actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px;}
+  .xw-hero__stats{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px;
+    border-top:1px dashed var(--xw-line);padding-top:22px;
+  }
+  .xw-hero__stats b{display:block;font-size:24px;letter-spacing:.5px;color:var(--xw-ink);}
+  .xw-hero__stats span{font-size:12.5px;color:var(--xw-ink-soft);}
+  .xw-hero__visual{position:relative;}
+  .xw-hero__visual img{
+    border-radius:22px;box-shadow:var(--xw-shadow);width:100%;aspect-ratio:4/3.2;object-fit:cover;
+  }
+  .xw-hero__float{
+    position:absolute;left:-14px;bottom:22px;
+    background:#fff;border-radius:14px;padding:11px 16px;
+    box-shadow:var(--xw-shadow);font-size:13px;display:flex;align-items:center;gap:10px;
+  }
+  .xw-hero__float i{
+    width:9px;height:9px;border-radius:50%;background:#3fa66a;display:inline-block;
+  }
+
+  /* ===== 关键词解析 ===== */
+  .xw-analysis{background:#fff;}
+  .xw-analysis__grid{display:grid;grid-template-columns:1fr 320px;gap:40px;align-items:start;}
+  .xw-analysis h2{font-size:clamp(22px,3vw,28px);margin-bottom:18px;}
+  .xw-analysis p{color:var(--xw-ink-soft);font-size:15px;text-indent:2em;}
+  .xw-analysis__aside{
+    background:linear-gradient(160deg,#fff6e3,#f7e7c8);
+    border-radius:var(--xw-radius);padding:22px;border:1px solid #f0dcb8;
+    position:sticky;top:130px;
+  }
+  .xw-analysis__aside h3{font-size:16px;margin-bottom:12px;}
+  .xw-analysis__aside li{
+    font-size:13.5px;color:var(--xw-ink-soft);padding:7px 0;border-bottom:1px dashed #e4cfa5;
+    display:flex;gap:8px;
+  }
+  .xw-analysis__aside li:last-child{border-bottom:none;}
+  .xw-analysis__aside li::before{content:"◆";color:var(--xw-amber-deep);font-size:10px;line-height:2.2;}
+
+  /* ===== 焦点视频 ===== */
+  .xw-focus__top{display:grid;grid-template-columns:1.4fr 1fr;gap:22px;margin-bottom:22px;}
+  .xw-focus__small{display:grid;grid-template-columns:1fr 1fr;gap:22px;}
+  .xw-card{
+    background:#fff;border-radius:var(--xw-radius);overflow:hidden;
+    border:1px solid var(--xw-line);transition:.28s;display:flex;flex-direction:column;
+    position:relative;
+  }
+  .xw-card:hover{transform:translateY(-5px);box-shadow:var(--xw-shadow);}
+  .xw-card__cover{position:relative;aspect-ratio:16/9;overflow:hidden;background:#eee;}
+  .xw-card__cover img{width:100%;height:100%;object-fit:cover;transition:.5s;}
+  .xw-card:hover .xw-card__cover img{transform:scale(1.05);}
+  .xw-card__play{
+    position:absolute;inset:0;display:grid;place-items:center;
+    background:linear-gradient(180deg,rgba(0,0,0,0) 40%,rgba(0,0,0,.42));
+    opacity:0;transition:.28s;
+  }
+  .xw-card:hover .xw-card__play{opacity:1;}
+  .xw-card__play span{
+    width:52px;height:52px;border-radius:50%;
+    background:rgba(255,255,255,.92);display:grid;place-items:center;
+    font-size:18px;color:var(--xw-ink);padding-left:4px;
+  }
+  .xw-card__tag{
+    position:absolute;left:12px;top:12px;z-index:2;
+    background:rgba(36,31,25,.82);color:#ffe3a6;
+    font-size:11.5px;padding:3px 10px;border-radius:999px;letter-spacing:.5px;
+  }
+  .xw-card__body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1;}
+  .xw-card__body h3{font-size:16.5px;line-height:1.45;}
+  .xw-card__desc{font-size:13.5px;color:var(--xw-ink-soft);flex:1;}
+  .xw-card__meta{
+    display:flex;align-items:center;gap:10px;font-size:12.5px;color:var(--xw-ink-soft);
+    flex-wrap:wrap;
+  }
+  .xw-card__avatar{
+    width:24px;height:24px;border-radius:50%;display:grid;place-items:center;
+    font-size:10.5px;color:#fff;font-weight:700;flex:0 0 auto;
+  }
+  .xw-card__ops{display:flex;gap:8px;margin-top:6px;}
+  .xw-mini-btn{
+    font-size:12.5px;padding:4px 12px;border-radius:999px;border:1px solid var(--xw-line);
+    color:var(--xw-ink-soft);transition:.2s;display:inline-flex;align-items:center;gap:5px;
+  }
+  .xw-mini-btn:hover{border-color:var(--xw-amber);color:var(--xw-amber-deep);}
+  .xw-mini-btn.is-liked{background:#fdeceb;border-color:#f0b3ae;color:#c2453b;}
+  .xw-mini-btn.is-saved{background:#fff5e0;border-color:var(--xw-amber);color:var(--xw-amber-deep);}
+  .xw-focus__big .xw-card__body h3{font-size:21px;}
+
+  /* ===== 创作者 ===== */
+  .xw-creators__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:20px;}
+  .xw-creator{
+    background:#fff;border:1px solid var(--xw-line);border-radius:var(--xw-radius);
+    padding:22px 20px;text-align:center;transition:.26s;cursor:pointer;
+  }
+  .xw-creator:hover{transform:translateY(-4px);box-shadow:var(--xw-shadow);border-color:var(--xw-amber);}
+  .xw-creator__ava{
+    width:64px;height:64px;border-radius:18px;margin:0 auto 12px;
+    display:grid;place-items:center;font-size:22px;font-weight:700;color:#fff;
+  }
+  .xw-creator h3{font-size:16px;}
+  .xw-creator__field{font-size:12.5px;color:var(--xw-amber-deep);margin:4px 0 8px;}
+  .xw-creator__bio{font-size:13px;color:var(--xw-ink-soft);min-height:44px;}
+  .xw-creator__nums{display:flex;justify-content:center;gap:16px;font-size:12.5px;color:var(--xw-ink-soft);border-top:1px dashed var(--xw-line);padding-top:10px;margin-top:10px;}
+  .xw-creator__nums b{color:var(--xw-ink);font-size:14px;}
+
+  /* ===== 热门视频流 ===== */
+  .xw-filter{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px;}
+  .xw-chip{
+    font-size:13px;padding:6px 16px;border-radius:999px;border:1px solid var(--xw-line);
+    background:#fff;color:var(--xw-ink-soft);transition:.2s;
+  }
+  .xw-chip.is-on{background:var(--xw-ink);color:#fbf7ef;border-color:var(--xw-ink);}
+  .xw-stream{display:grid;grid-template-columns:repeat(auto-fill,minmax(278px,1fr));gap:22px;}
+  .xw-empty{
+    display:none;text-align:center;color:var(--xw-ink-soft);font-size:14px;padding:40px 0;
+  }
+
+  /* ===== 专题 ===== */
+  .xw-topics{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;}
+  .xw-topic{
+    position:relative;border-radius:var(--xw-radius);overflow:hidden;min-height:250px;
+    display:flex;flex-direction:column;justify-content:flex-end;padding:22px;
+    color:#fff;transition:.28s;
+  }
+  .xw-topic:hover{transform:translateY(-5px);}
+  .xw-topic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;}
+  .xw-topic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,14,8,.05),rgba(20,14,8,.82));z-index:1;}
+  .xw-topic>*{position:relative;z-index:2;}
+  .xw-topic__status{
+    align-self:flex-start;font-size:11.5px;background:var(--xw-amber);color:#241f19;
+    padding:2px 10px;border-radius:999px;font-weight:700;margin-bottom:auto;
+  }
+  .xw-topic h3{font-size:19px;margin-top:60px;}
+  .xw-topic p{font-size:13px;opacity:.88;margin:8px 0 0;}
+
+  /* ===== 故事 ===== */
+  .xw-stories{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;}
+  .xw-story{
+    background:#fff;border-left:4px solid var(--xw-amber);border-radius:12px;
+    padding:24px 22px;box-shadow:0 4px 16px rgba(80,55,20,.05);
+  }
+  .xw-story h3{font-size:16.5px;margin-bottom:10px;}
+  .xw-story p{font-size:13.8px;color:var(--xw-ink-soft);margin:0;}
+  .xw-story__sig{font-size:12.5px;color:var(--xw-clay);margin-top:12px;display:block;}
+
+  /* ===== 评价 ===== */
+  .xw-reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;}
+  .xw-review{
+    background:#fff;border-radius:var(--xw-radius);padding:20px;border:1px solid var(--xw-line);
+    position:relative;
+  }
+  .xw-review::before{
+    content:"“";position:absolute;right:16px;top:4px;font-size:46px;
+    color:#f3e0b8;font-family:Georgia,serif;line-height:1;
+  }
+  .xw-review__stars{color:var(--xw-amber);font-size:13px;letter-spacing:2px;margin-bottom:8px;}
+  .xw-review p{font-size:13.8px;color:var(--xw-ink-soft);margin:0 0 12px;}
+  .xw-review__who{font-size:12.5px;color:var(--xw-clay);font-weight:600;}
+
+  /* ===== 帮助 / FAQ ===== */
+  .xw-faq{max-width:840px;margin:0 auto;}
+  .xw-faq details{
+    background:#fff;border:1px solid var(--xw-line);border-radius:12px;
+    margin-bottom:12px;padding:0 18px;transition:.2s;
+  }
+  .xw-faq details[open]{border-color:var(--xw-amber);box-shadow:0 4px 16px rgba(184,116,7,.08);}
+  .xw-faq summary{
+    cursor:pointer;list-style:none;padding:16px 0;font-weight:600;font-size:15px;
+    display:flex;justify-content:space-between;align-items:center;gap:12px;
+  }
+  .xw-faq summary::-webkit-details-marker{display:none;}
+  .xw-faq summary::after{content:"+";color:var(--xw-amber-deep);font-size:20px;transition:.2s;}
+  .xw-faq details[open] summary::after{content:"−";}
+  .xw-faq p{font-size:13.8px;color:var(--xw-ink-soft);padding-bottom:14px;margin:0;}
+
+  /* ===== 联系/动态 ===== */
+  .xw-double{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start;}
+  .xw-news li{
+    display:flex;gap:16px;padding:14px 0;border-bottom:1px dashed var(--xw-line);
+    font-size:14px;
+  }
+  .xw-news li time{flex:0 0 84px;color:var(--xw-amber-deep);font-size:13px;font-weight:600;}
+  .xw-news li span{color:var(--xw-ink-soft);}
+  .xw-contact{
+    background:linear-gradient(150deg,#241f19,#463525);color:#f7ead2;
+    border-radius:var(--xw-radius);padding:28px;
+  }
+  .xw-contact h3{font-size:19px;margin-bottom:12px;}
+  .xw-contact p{font-size:13.8px;color:#d9c9ae;}
+  .xw-contact__row{font-size:14px;margin:12px 0;display:flex;gap:10px;align-items:baseline;}
+  .xw-contact__row b{color:#ffd98a;font-weight:600;flex:0 0 66px;}
+  .xw-contact__btns{display:flex;gap:12px;margin-top:18px;flex-wrap:wrap;}
+  .xw-contact .xw-btn--ghost{border-color:#f7ead2;color:#f7ead2;}
+  .xw-contact .xw-btn--ghost:hover{background:#f7ead2;color:#241f19;}
+
+  /* ===== 页脚 ===== */
+  .xw-footer{
+    background:#1d1913;color:#c9bba4;padding:48px 0 26px;font-size:13.5px;
+  }
+  .xw-footer__grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:30px;}
+  .xw-footer h4{font-size:14.5px;color:#f7ead2;margin-bottom:12px;}
+  .xw-footer li{padding:4px 0;}
+  .xw-footer a:hover{color:var(--xw-amber);}
+  .xw-footer__brand b{color:#fff;font-size:16px;display:block;margin-bottom:8px;}
+  .xw-footer__bottom{
+    border-top:1px solid #352e24;margin-top:32px;padding-top:18px;
+    display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:#8d8170;
+  }
+
+  /* ===== 回到顶部 & Toast ===== */
+  .xw-totop{
+    position:fixed;right:22px;bottom:26px;width:46px;height:46px;border-radius:50%;
+    background:var(--xw-ink);color:#ffe3a6;display:grid;place-items:center;
+    font-size:18px;box-shadow:var(--xw-shadow);opacity:0;pointer-events:none;transition:.3s;z-index:80;
+  }
+  .xw-totop.is-on{opacity:1;pointer-events:auto;}
+  .xw-toast{
+    position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+    background:#241f19;color:#ffe3a6;font-size:13.5px;padding:10px 20px;border-radius:999px;
+    opacity:0;pointer-events:none;transition:.3s;z-index:120;
+  }
+  .xw-toast.is-on{opacity:1;transform:translate(-50%,0);}
+
+  /* ===== 弹窗 ===== */
+  .xw-modal{
+    position:fixed;inset:0;background:rgba(24,19,13,.55);z-index:110;
+    display:none;align-items:center;justify-content:center;padding:20px;
+  }
+  .xw-modal.is-on{display:flex;}
+  .xw-modal__box{
+    background:#fff;border-radius:20px;max-width:460px;width:100%;padding:28px;position:relative;
+    animation:xwPop .28s ease;
+  }
+  @keyframes xwPop{from{transform:translateY(16px);opacity:0;}to{transform:none;opacity:1;}}
+  .xw-modal__box h3{font-size:19px;margin-bottom:12px;}
+  .xw-modal__box p{font-size:14px;color:var(--xw-ink-soft);}
+  .xw-modal__close{
+    position:absolute;right:16px;top:12px;font-size:22px;color:var(--xw-ink-soft);line-height:1;
+  }
+  .xw-form-row{margin:12px 0;}
+  .xw-form-row label{display:block;font-size:13px;color:var(--xw-ink-soft);margin-bottom:5px;}
+  .xw-form-row input,.xw-form-row textarea{
+    width:100%;border:1px solid var(--xw-line);border-radius:10px;padding:9px 12px;
+    font-family:inherit;font-size:14px;outline:none;background:#fdfbf6;
+  }
+  .xw-form-row input:focus,.xw-form-row textarea:focus{border-color:var(--xw-amber);}
+
+  @media (max-width:900px){
+    .xw-hero__grid,.xw-analysis__grid,.xw-focus__top,.xw-double{grid-template-columns:1fr;}
+    .xw-analysis__aside{position:static;}
+    .xw-footer__grid{grid-template-columns:1fr 1fr;}
+    .xw-focus__top .xw-card__body h3{font-size:18px;}
+  }
+  @media (max-width:720px){
+    html{scroll-padding-top:104px;}
+    .xw-burger{display:block;margin-left:auto;}
+    .xw-search{display:none;}
+    .xw-nav{
+      display:none;width:100%;flex-direction:column;gap:2px;
+      padding:8px 0 4px;
+    }
+    .xw-nav.is-open{display:flex;}
+    .xw-nav a{padding:10px 12px;border-radius:10px;}
+    .xw-header__inner{flex-wrap:wrap;}
+    .xw-notice{font-size:12px;padding:7px 14px;}
+    .xw-focus__small{grid-template-columns:1fr;}
+    .xw-footer__grid{grid-template-columns:1fr;}
+    .xw-section{padding:46px 0;}
+  }
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="xw-topbar">
+  <div class="xw-notice">
+    <span class="xw-notice__tag">官方发布</span>
+    <div class="xw-notice__track">
+      <span class="xw-notice__item is-on">「徐婉韩国吃瓜」11 月城市观察专题上线，6 位创作者带来首尔街头影像</span>
+      <span class="xw-notice__item">社区创作挑战赛第 12 期开启报名，本期主题：异国街角的日常</span>
+      <span class="xw-notice__item">品牌官网新版创作工具开放内测，支持脚本灵感一键生成</span>
+      <span class="xw-notice__item">2026 年度原创影像征集进入终评，投票通道同步开放</span>
+    </div>
+  </div>
+  <header class="xw-header">
+    <div class="xw-header__inner">
+      <a class="xw-logo" href="#xw-hero">
+        <span class="xw-logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M8 5.5l11 6.5-11 6.5z" fill="#241f19"/></svg>
+        </span>
+        <span class="xw-logo__text">
+          <b>徐婉韩国吃瓜</b>
+          <span>VIDEO COMMUNITY</span>
+        </span>
+      </a>
+      <nav class="xw-nav" id="xwNav" aria-label="主导航">
+        <a href="#xw-hero">首页</a>
+        <a href="#xw-focus">焦点</a>
+        <a href="#xw-stream">热门</a>
+        <a href="#xw-creators">创作者</a>
+        <a href="#xw-topics">专题</a>
+        <a href="#xw-stories">故事</a>
+        <a href="#xw-faq">帮助</a>
+        <a href="#xw-contact">联系</a>
+      </nav>
+      <form class="xw-search" id="xwSearch" role="search" onsubmit="return false;">
+        <input type="search" id="xwSearchInput" placeholder="搜索视频、话题、创作者" aria-label="站内搜索">
+        <button type="button" id="xwSearchBtn">搜索</button>
+      </form>
+      <button class="xw-burger" id="xwBurger" aria-label="展开导航" aria-expanded="false">☰</button>
+    </div>
+    <div class="xw-search-feedback" id="xwSearchFeedback"></div>
+  </header>
+</div>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="xw-hero xw-wrap" id="xw-hero">
+    <div class="xw-hero__grid">
+      <div>
+        <span class="xw-hero__badge">官方网站 · 品牌门户</span>
+        <h1><em>徐婉韩国吃瓜</em></h1>
+        <p class="xw-hero__slogan">把远方的日常，拍成可被靠近的故事</p>
+        <p class="xw-hero__intro">
+          作为深耕跨地域生活影像的视频品牌，我们以「徐婉韩国吃瓜」为原点，持续记录异国街巷里的真实片段：一位留学生的深夜食堂、一场地铁口的即兴演出、一家开了三十年的老糖饼铺。平台汇聚原创创作者与企业伙伴，以专业制作与品质内容构建多元内容生态，让每一次围观都有温度、有细节、有回响。
+        </p>
+        <div class="xw-hero__actions">
+          <a class="xw-btn xw-btn--solid" href="#xw-stream">浏览精品内容</a>
+          <a class="xw-btn xw-btn--ghost" href="#xw-topics">查看本期专题</a>
+          <a class="xw-btn xw-btn--amber" href="#xw-contact">品牌合作</a>
+        </div>
+        <div class="xw-hero__stats">
+          <div><b data-count="128">0</b><span>原创影像作品</span></div>
+          <div><b data-count="46">0</b><span>签约创作者</span></div>
+          <div><b data-count="312000">0</b><span>社区用户</span></div>
+        </div>
+      </div>
+      <div class="xw-hero__visual">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 640'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f3c969'/%3E%3Cstop offset='1' stop-color='%238c5a3c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='640' fill='url(%23g1)'/%3E%3Ccircle cx='620' cy='140' r='90' fill='%23ffe3a6' opacity='.7'/%3E%3Cpath d='M0 470 L180 350 L340 440 L520 300 L800 470 L800 640 L0 640 Z' fill='%23241f19' opacity='.55'/%3E%3Crect x='120' y='230' width='150' height='180' fill='%23241f19' opacity='.35'/%3E%3Crect x='300' y='270' width='110' height='140' fill='%23241f19' opacity='.28'/%3E%3Ccircle cx='195' cy='210' r='26' fill='%23fff6e3' opacity='.8'/%3E%3Cpath d='M380 120 l70 40 -70 40z' fill='%23fff6e3' opacity='.85'/%3E%3Crect x='520' y='480' width='180' height='12' rx='6' fill='%23fff6e3' opacity='.5'/%3E%3C/svg%3E" alt="徐婉韩国吃瓜品牌主视觉：暖金色调的异国街巷剪影与镜头符号">
+        <div class="xw-hero__float"><i></i>社区持续更新中 · 每日新增原创影像</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关键词解析 -->
+  <section class="xw-section xw-analysis" id="xw-analysis">
+    <div class="xw-wrap">
+      <div class="xw-analysis__grid">
+        <div>
+          <span class="xw-eyebrow">品牌解析</span>
+          <h2>「徐婉韩国吃瓜」在记录什么</h2>
+          <p>「徐婉韩国吃瓜」不是一个靠标题党吸引眼球的账号名，它更像是一扇被长期打开的窗。窗口的这一侧是中文世界的日常语境，另一侧是韩国城市的真实节奏——清晨便利店门口的热咖啡、大学路上贴着二手书广告的电线杆、弘大周末才出现的手作市集。我们把这个名字理解为一种观看方式：带着好奇心旁观，也带着尊重去理解，把“吃瓜”这个原本轻巧的词，还原成普通人彼此打量的温柔视角。平台自成立起，就以官方网站的标准要求内容的真实性与可追溯性，每一条影像都标注拍摄地点、时间与创作者，让围观不再悬浮。</p>
+          <p>在内容形态上，「徐婉韩国吃瓜」以中短篇幅的纪实影像为主线，辅以人物访谈、城市漫步、生活技巧与幕后手记。我们邀请长期居住在当地的创作者，也邀请短期旅居的拍摄者，让同一座城市在不同镜头里呈现多面质感。品牌坚持原创与正版授权，所有素材均来自创作者本人或经授权使用，平台为优质作品提供高清转码、字幕支持与分发推广，帮助创作者把注意力还给内容本身。企业团队负责选题策划、内容审核与社区运营，形成从创意到发布的完整链路，这也是我们作为视频品牌能够持续运营的基础。</p>
+          <p>社区是「徐婉韩国吃瓜」的另一半。用户可以在作品下留言、点赞、收藏，也可以参与每月的话题挑战，把自己拍的片段上传到平台。我们设置了新人榜与口碑榜，让第一次投稿的创作者也能被看见；我们保留举报与反馈入口，对搬运、拼接、虚假信息保持零容忍。品牌希望建立的是一个值得信赖的内容生态：观众知道自己看到的是真实的，创作者知道自己的劳动会被尊重，合作方知道自己的品牌会出现在合适的位置。这种信任不是靠口号，而是靠一次次具体的审核、一条条具体的回复积累起来的。</p>
+          <p>从行业观察的角度看，跨地域生活影像正在成为一个稳定的垂直领域。观众对“别人怎么生活”的兴趣，本质上是对自身处境的参照。我们观察到，越是具体、越是带有生活毛边的片段，越容易引发共鸣：一顿没做成功的泡菜汤、一次因为语言不通而闹出的误会、一场下着雨却依然排队的街头演出。这些内容没有宏大叙事，却构成了真实的力量。「徐婉韩国吃瓜」愿意做这个领域里耐心的一方，不追逐短期热点，而是以匠心打磨每一条精品内容，让品牌故事与用户成长彼此交织。我们相信，陪伴比爆款更长久。</p>
+          <p>面向未来，平台将开放更多创作工具与数据支持，包括脚本灵感库、剪辑思路模板、封面设计建议，以及基于社区反馈的选题参考。我们也会持续举办比赛与征集活动，把优秀的创作者推向更广阔的舞台。作为企业，我们同样重视社会责任：在内容中避免刻板印象，在讨论中倡导理性表达，在合作中坚持透明报价。官方网站会定期发布企业动态与更新日志，让每一次变化都有据可查。感谢每一位愿意停下来观看的人，是你们让这个社区有了温度与力量。</p>
+        </div>
+        <aside class="xw-analysis__aside">
+          <h3>平台关键词</h3>
+          <ul>
+            <li>原创纪实影像 · 正版授权</li>
+            <li>跨地域生活观察</li>
+            <li>创作者成长与陪伴</li>
+            <li>精品内容 · 高清呈现</li>
+            <li>社区共建 · 理性讨论</li>
+            <li>企业动态公开透明</li>
+            <li>行业领先的审核标准</li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点视频 -->
+  <section class="xw-section" id="xw-focus">
+    <div class="xw-wrap">
+      <div class="xw-sec-head xw-sec-head--row">
+        <div>
+          <span class="xw-eyebrow">焦点推荐</span>
+          <h2>本周值得停留的影像</h2>
+          <p>由编辑团队与社区共同选出，兼顾观看体验与内容深度。</p>
+        </div>
+        <a class="xw-btn xw-btn--ghost" href="#xw-stream">查看全部</a>
+      </div>
+      <div class="xw-focus__top">
+        <article class="xw-card xw-focus__big" data-title="首尔凌晨三点的糖饼铺">
+          <div class="xw-card__cover">
+            <span class="xw-card__tag">城市探索</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%232b1f18'/%3E%3Ccircle cx='480' cy='90' r='52' fill='%23f3c969' opacity='.9'/%3E%3Crect x='60' y='200' width='220' height='120' fill='%23463425'/%3E%3Crect x='80' y='220' width='60' height='60' fill='%23f3c969' opacity='.55'/%3E%3Crect x='170' y='220' width='60' height='60' fill='%23f3c969' opacity='.35'/%3E%3Cpath d='M0 320 L160 260 L320 310 L480 250 L640 320 L640 360 L0 360Z' fill='%2315100c'/%3E%3Ccircle cx='330' cy='150' r='16' fill='%23fff6e3' opacity='.8'/%3E%3Cpath d='M380 130 l50 30 -50 30z' fill='%23fff6e3' opacity='.8'/%3E%3C/svg%3E" alt="首尔凌晨三点糖饼铺的暖色灯光与街角剪影">
+            <span class="xw-card__play"><span>▶</span></span>
+          </div>
+          <div class="xw-card__body">
+            <h3>首尔凌晨三点的糖饼铺：一位老人守了三十年的火候</h3>
+            <p class="xw-card__desc">我们跟着拍摄对象从备料开始，记录他用铁夹翻动糖饼的手势，也记录他谈起老顾客时眼里的光。这条片子没有旁白，只有油锅声和街道的风。</p>
+            <div class="xw-card__meta">
+              <span class="xw-card__avatar" style="background:#c2453b">徐</span>
+              <span>徐婉</span><span>·</span><span>2.4 万次观看</span><span>·</span><span>前天</span>
+            </div>
+            <div class="xw-card__ops">
+              <button class="xw-mini-btn xw-like" data-num="1284">♡ <span>1284</span></button>
+              <button class="xw-mini-btn xw-save">☆ 收藏</button>
+              <button class="xw-mini-btn xw-share" data-title="首尔凌晨三点的糖饼铺">↗ 分享</button>
+            </div>
+          </div>
+        </article>
+        <div class="xw-focus__small">
+          <article class="xw-card">
+            <div class="xw-card__cover">
+              <span class="xw-card__tag">人物访谈</span>
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23e8d9c0'/%3E%3Ccircle cx='320' cy='150' r='64' fill='%238c5a3c'/%3E%3Cpath d='M220 360 Q320 220 420 360Z' fill='%238c5a3c' opacity='.7'/%3E%3Crect x='70' y='70' width='90' height='90' fill='%23f3c969' opacity='.6'/%3E%3Crect x='500' y='220' width='70' height='70' fill='%23b87407' opacity='.5'/%3E%3C/svg%3E" alt="人物访谈封面：暖米色背景中的创作者半身剪影">
+              <span class="xw-card__play"><span>▶</span></span>
+            </div>
+            <div class="xw-card__body">
+              <h3>在韩做中文播客的第七年</h3>
+              <p class="xw-card__desc">聊聊语言、身份与表达方式的变化。</p>
+              <div class="xw-card__meta">
+                <span class="xw-card__avatar" style="background:#8c5a3c">林</span>
+                <span>林知远</span><span>·</span><span>1.8 万</span>
+              </div>
+            </div>
+          </article>
+          <article class="xw-card">
+            <div class="xw-card__cover">
+              <span class="xw-card__tag">实用技巧</span>
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23344b3a'/%3E%3Cpath d='M0 300 L140 210 L280 280 L430 190 L640 300 L640 360 L0 360Z' fill='%231e2c21'/%3E%3Ccircle cx='520' cy='90' r='44' fill='%23e8d9c0' opacity='.85'/%3E%3Crect x='100' y='120' width='120' height='80' rx='8' fill='%23e8d9c0' opacity='.25'/%3E%3C/svg%3E" alt="绿色调街景封面：地铁出口与步行路线示意">
+              <span class="xw-card__play"><span>▶</span></span>
+            </div>
+            <div class="xw-card__body">
+              <h3>地铁换乘不迷路：给初到者的路线攻略</h3>
+              <p class="xw-card__desc">三条主线、五个换乘点，一次讲清。</p>
+              <div class="xw-card__meta">
+                <span class="xw-card__avatar" style="background:#344b3a">周</span>
+                <span>周小满</span><span>·</span><span>3.1 万</span>
+              </div>
+            </div>
+          </article>
+          <article class="xw-card">
+            <div class="xw-card__cover">
+              <span class="xw-card__tag">生活记录</span>
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23c9b7a5'/%3E%3Ccircle cx='200' cy='160' r='70' fill='%23f7ead2'/%3E%3Ccircle cx='390' cy='210' r='46' fill='%236b5848'/%3E%3Crect x='440' y='80' width='110' height='150' rx='10' fill='%233c322a' opacity='.6'/%3E%3Cpath d='M0 330 L200 280 L400 320 L640 270 L640 360 L0 360Z' fill='%233c322a' opacity='.4'/%3E%3C/svg%3E" alt="生活记录封面：浅棕房间里的窗光与日常物件">
+              <span class="xw-card__play"><span>▶</span></span>
+            </div>
+            <div class="xw-card__body">
+              <h3>一个人住的第一百天：餐桌上的小变化</h3>
+              <p class="xw-card__desc">从泡面到认真做一顿饭。</p>
+              <div class="xw-card__meta">
+                <span class="xw-card__avatar" style="background:#c9b7a5;color:#4a3a2c">安</span>
+                <span>安可</span><span>·</span><span>2.2 万</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者矩阵 -->
+  <section class="xw-section xw-section--alt" id="xw-creators">
+    <div class="xw-wrap">
+      <div class="xw-sec-head">
+        <span class="xw-eyebrow">创作者矩阵</span>
+        <h2>把镜头交到值得信赖的人手里</h2>
+        <p>他们来自不同城市、不同职业，却都在用影像记录身边的具体生活。点击卡片可查看创作者档案。</p>
+      </div>
+      <div class="xw-creators__grid">
+        <article class="xw-creator" data-creator="徐婉" data-bio="常驻首尔的中文影像创作者，擅长街头纪实与人物访谈，作品以细节见长，坚持每一条素材亲自拍摄。">
+          <div class="xw-creator__ava" style="background:#c2453b">徐</div>
+          <h3>徐婉</h3>
+          <div class="xw-creator__field">街头纪实 / 人物访谈</div>
+          <p class="xw-creator__bio">常驻首尔，用镜头收集街角的烟火气，偏爱自然光与同期声。</p>
+          <div class="xw-creator__nums"><span><b>62</b> 作品</span><span><b>8.7万</b> 关注</span></div>
+        </article>
+        <article class="xw-creator" data-creator="林知远" data-bio="在韩七年，中文播客主理人，关注语言与身份议题，擅长长访谈与声音设计。">
+          <div class="xw-creator__ava" style="background:#8c5a3c">林</div>
+          <h3>林知远</h3>
+          <div class="xw-creator__field">深度访谈 / 声音设计</div>
+          <p class="xw-creator__bio">做播客也拍片，喜欢把对话留得慢一点，让观点自己长出来。</p>
+          <div class="xw-creator__nums"><span><b>41</b> 作品</span><span><b>6.2万</b> 关注</span></div>
+        </article>
+        <article class="xw-creator" data-creator="周小满" data-bio="城市路线与实用攻略作者，擅长把复杂信息整理成清晰的影像说明，深受新到者欢迎。">
+          <div class="xw-creator__ava" style="background:#344b3a">周</div>
+          <h3>周小满</h3>
+          <div class="xw-creator__field">城市攻略 / 实用技巧</div>
+          <p class="xw-creator__bio">把换乘、租房、买菜这些小事拍明白，就是她理解的专业。</p>
+          <div class="xw-creator__nums"><span><b>38</b> 作品</span><span><b>5.4万</b> 关注</span></div>
+        </article>
+        <article class="xw-creator" data-creator="安可" data-bio="独居生活记录者，作品围绕一日三餐与房间整理展开，风格安静、克制，强调真实而非美化。">
+          <div class="xw-creator__ava" style="background:#b87407">安</div>
+          <h3>安可</h3>
+          <div class="xw-creator__field">生活记录 / 家居日常</div>
+          <p class="xw-creator__bio">一个人住的第一百天开始拍视频，记录那些不起眼的小改变。</p>
+          <div class="xw-creator__nums"><span><b>29</b> 作品</span><span><b>4.1万</b> 关注</span></div>
+        </article>
+        <article class="xw-creator" data-creator="洋葱不哭" data-bio="美食制作与探店作者，善于用短节奏呈现烹饪过程，也会认真讲清楚一道菜的来处。">
+          <div class="xw-creator__ava" style="background:#6b5848">洋</div>
+          <h3>洋葱不哭</h3>
+          <div class="xw-creator__field">美食烹饪 / 探店测评</div>
+          <p class="xw-creator__bio">厨房里的失误也照实拍，因为做饭本来就不是每次都成功。</p>
+          <div class="xw-creator__nums"><span><b>47</b> 作品</span><span><b>7.3万</b> 关注</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热门视频流 -->
+  <section class="xw-section" id="xw-stream">
+    <div class="xw-wrap">
+      <div class="xw-sec-head xw-sec-head--row">
+        <div>
+          <span class="xw-eyebrow">热门视频流</span>
+          <h2>社区正在讨论的六条影像</h2>
+          <p>按标签快速筛选，找到你此刻想看的题材。点赞与收藏会实时反馈。</p>
+        </div>
+      </div>
+      <div class="xw-filter" id="xwFilter">
+        <button class="xw-chip is-on" data-filter="all">全部</button>
+        <button class="xw-chip" data-filter="城市">城市探索</button>
+        <button class="xw-chip" data-filter="美食">美食烹饪</button>
+        <button class="xw-chip" data-filter="人物">人物访谈</button>
+        <button class="xw-chip" data-filter="生活">生活记录</button>
+        <button class="xw-chip" data-filter="技巧">实用技巧</button>
+      </div>
+      <div class="xw-stream" id="xwStream">
+        <article class="xw-card" data-cat="城市">
+          <div class="xw-card__cover">
+            <span class="xw-card__tag">城市探索</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%232a3a4a'/%3E%3Crect x='50' y='120' width='80' height='200' fill='%23d7c9b2' opacity='.55'/%3E%3Crect x='160' y='70' width='60' height='250' fill='%23d7c9b2' opacity='.35'/%3E%3Crect x='250' y='150' width='100' height='170' fill='%23d7c9b2' opacity='.45'/%3E%3Ccircle cx='520' cy='90' r='40' fill='%23f3c969'/%3E%3Cpath d='M0 330 L640 300 L640 360 L0 360Z' fill='%23151c24'/%3E%3C/svg%3E" alt="傍晚城市天际线的冷蓝剪影封面">
+            <span class="xw-card__play"><span>▶</span></span>
+          </div>
+          <div class="xw-card__body">
+            <h3>傍晚六点的汉江边，风把人群吹成了剪影</h3>
+            <p class="xw-card__desc">没有解说，只有骑行者的铃声和远处练习萨克斯的学生。</p>
+            <div class="xw-card__meta"><span class="xw-card__avatar" style="background:#2a3a4a">徐</span><span>徐婉</span><span>·</span><span>1.2 万次观看</span></div>
+            <div class="xw-card__ops">
+              <button class="xw-mini-btn xw-like" data-num="642">♡ <span>642</span></button>
+              <button class="xw-mini-btn xw-save">☆ 收藏</button>
+              <button class="xw-mini-btn xw-share" data-title="傍晚六点的汉江边，风把人群吹成了剪影">↗ 分享</button>
+            </div>
+          </div>
+        </article>
+        <article class="xw-card" data-cat="美食">
+          <div class="xw-card__cover">
+            <span class="xw-card__tag">美食烹饪</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23efe0cc'/%3E%3Cellipse cx='320' cy='230' rx='160' ry='60' fill='%23b87407'/%3E%3Cellipse cx='320' cy='215' rx='120' ry='40' fill='%23f3c969'/%3E%3Ccircle cx='280' cy='205' r='14' fill='%23c2453b'/%3E%3Ccircle cx='350' cy='215' r='12' fill='%23344b3a'/%3E%3Ccircle cx='310' cy='230' r='10' fill='%23c2453b'/%3E%3Cpath d='M120 90 q30 -40 60 0' stroke='%238c5a3c' stroke-width='6' fill='none'/%3E%3Cpath d='M470 80 q30 -40 60 0' stroke='%238c5a3c' stroke-width='6' fill='none'/%3E%3C/svg%3E" alt="米色背景中一锅热汤与彩色配料的俯视封面">
+            <span class="xw-card__play"><span>▶</span></span>
+          </div>
+          <div class="xw-card__body">
+            <h3>第一次做部队锅，我把顺序弄反了</h3>
+            <p class="xw-card__desc">从失败开始讲起，反而讲清了几种调味的差别。</p>
+            <div class="xw-card__meta"><span class="xw-card__avatar" style="background:#6b5848">洋</span><span>洋葱不哭</span><span>·</span><span>2.1 万次观看</span></div>
+            <div class="xw-card__ops">
+              <button class="xw-mini-btn xw-like" data-num="986">♡ <span>986</span></button>
+              <button class="xw-mini-btn xw-save">☆ 收藏</button>
+              <button class="xw-mini-btn xw-share" data-title="第一次做部队锅，我把顺序弄反了">↗ 分享</button>
+            </div>
+          </div>
+        </article>
+        <article class="xw-card" data-cat="人物">
+          <div class="xw-card__cover">
+            <span class="xw-card__tag">人物访谈</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23524a6b'/%3E%3Ccircle cx='200' cy='170' r='56' fill='%23e8d9c0'/%3E%3Ccircle cx='440' cy='180' r='56' fill='%23c9b7a5'/%3E%3Crect x='0' y='300' width='640' height='60' fill='%23211d2e'/%3E%3Cpath d='M300 140 l40 24 -40 24z' fill='%23f3c969'/%3E%3C/svg%3E" alt="紫色调访谈封面：两位对话者的头像剪影">
+            <span class="xw-card__play"><span>▶</span></span>
+          </div>
+          <div class="xw-card__body">
+            <h3>在异国开一间小店，最难的是解释自己</h3>
+            <p class="xw-card__desc">两位店主聊了聊被误解的瞬间，也聊了聊留下来的理由。</p>
+            <div class="xw-card__meta"><span class="xw-card__avatar" style="background:#524a6b">林</span><span>林知远</span><span>·</span><span>1.7 万次观看</span></div>
+            <div class="xw-card__ops">
+              <button class="xw-mini-btn xw-like" data-num="534">♡ <span>534</span></button>
+              <button class="xw-mini-btn xw-save">☆ 收藏</button>
+              <button class="xw-mini-btn xw-share" data-title="在异国开一间小店，最难的是解释自己">↗ 分享</button>
+            </div>
+          </div>
+        </article>
+        <article class="xw-card" data-cat="生活">
+          <div class="xw-card__cover">
+            <span class="xw-card__tag">生活记录</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23dfe6dd'/%3E%3Crect x='90' y='90' width='200' height='180' rx='8' fill='%23fbf7ef'/%3E%3Crect x='110' y='110' width='160' height='100' fill='%23344b3a' opacity='.5'/%3E%3Crect x='350' y='140' width='180' height='130' rx='10' fill='%23b8c4b3' opacity='.7'/%3E%3Ccircle cx='540' cy='90' r='34' fill='%23f3c969'/%3E%3C/svg%3E" alt="浅绿房间里的书桌与窗光生活记录封面">
+            <span class="xw-card__play"><span>▶</span></span>
+          </div>
+          <div class="xw-card__body">
+            <h3>把十平米的房间重新摆了一遍</h3>
+            <p class="xw-card__desc">移动了一张桌子，好像就多出了一整个下午。</p>
+            <div class="xw-card__meta"><span class="xw-card__avatar" style="background:#b87407">安</span><span>安可</span><span>·</span><span>8900 次观看</span></div>
+            <div class="xw-card__ops">
+              <button class="xw-mini-btn xw-like" data-num="421">♡ <span>421</span></button>
+              <button class="xw-mini-btn xw-save">☆ 收藏</button>
+              <button class="xw-mini-btn xw-share" data-title="把十平米的房间重新摆了一遍">↗ 分享</button>
+            </div>
+          </div>
+        </article>
+        <article class="xw-card" data-cat="技巧">
+          <div class="xw-card__cover">
+            <span class="xw-card__tag">实用技巧</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23f3efe6'/%3E%3Cpath d='M80 280 L200 160 L320 240 L440 120 L560 220' stroke='%23b87407' stroke-width='8' fill='none'/%3E%3Ccircle cx='200' cy='160' r='14' fill='%23c2453b'/%3E%3Ccircle cx='440' cy='120' r='14' fill='%23c2453b'/%3E%3Crect x='70' y='60' width='120' height='40' rx='8' fill='%23241f19' opacity='.15'/%3E%3C/svg%3E" alt="米白背景上的路线折线与节点标记封面">
+            <span class="xw-card__play"><span>▶</span></span>
+          </div>
+          <div class="xw-card__body">
+            <h3>一天跑完三个市集：路线、时间与避坑</h3>
+            <p class="xw-card__desc">把交通时间算进去，才是一份能用的攻略。</p>
+            <div class="xw-card__meta"><span class="xw-card__avatar" style="background:#344b3a">周</span><span>周小满</span><span>·</span><span>1.4 万次观看</span></div>
+            <div class="xw-card__ops">
+              <button class="xw-mini-btn xw-like" data-num="765">♡ <span>765</span></button>
+              <button class="xw-mini-btn xw-save">☆ 收藏</button>
+              <button class="xw-mini-btn xw-share" data-title="一天跑完三个市集：路线、时间与避坑">↗ 分享</button>
+            </div>
+          </div>
+        </article>
+        <article class="xw-card" data-cat="城市">
+          <div class="xw-card__cover">
+            <span class="xw-card__tag">在地文化</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%236b4a3a'/%3E%3Cpath d='M120 300 L180 130 L240 300 Z' fill='%23e8d9c0' opacity='.75'/%3E%3Cpath d='M280 300 L340 100 L400 300 Z' fill='%23e8d9c0' opacity='.55'/%3E%3Cpath d='M440 300 L500 150 L560 300 Z' fill='%23e8d9c0' opacity='.65'/%3E%3Ccircle cx='320' cy='80' r='30' fill='%23f3c969'/%3E%3C/svg%3E" alt="棕色调传统建筑屋檐与灯光的文化封面">
+            <span class="xw-card__play"><span>▶</span></span>
+          </div>
+          <div class="xw-card__body">
+            <h3>老城区的手作市集，摊主们不太爱说话</h3>
+            <p class="xw-card__desc">他们更愿意让你先摸一摸材料，再决定要不要听故事。</p>
+            <div class="xw-card__meta"><span class="xw-card__avatar" style="background:#6b4a3a">徐</span><span>徐婉</span><span>·</span><span>1.1 万次观看</span></div>
+            <div class="xw-card__ops">
+              <button class="xw-mini-btn xw-like" data-num="588">♡ <span>588</span></button>
+              <button class="xw-mini-btn xw-save">☆ 收藏</button>
+              <button class="xw-mini-btn xw-share" data-title="老城区的手作市集，摊主们不太爱说话">↗ 分享</button>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p class="xw-empty" id="xwEmpty">该标签下暂无内容，试试其他分类。</p>
+    </div>
+  </section>
+
+  <!-- 专题 -->
+  <section class="xw-section xw-section--alt" id="xw-topics">
+    <div class="xw-wrap">
+      <div class="xw-sec-head">
+        <span class="xw-eyebrow">专题企划</span>
+        <h2>围绕一个主题，把内容做深</h2>
+        <p>专题由编辑团队策划，创作者联合供稿，持续更新至结项。欢迎在评论区留下你的选题建议。</p>
+      </div>
+      <div class="xw-topics">
+        <a class="xw-topic" href="#xw-stream">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 420'%3E%3Crect width='640' height='420' fill='%23b87407'/%3E%3Ccircle cx='500' cy='120' r='80' fill='%23f3c969' opacity='.75'/%3E%3Cpath d='M0 340 L160 240 L320 320 L480 220 L640 330 L640 420 L0 420Z' fill='%232b1f18' opacity='.65'/%3E%3C/svg%3E" alt="异国街角日常专题的暖色街景封面">
+          <span class="xw-topic__status">更新至第 6 集</span>
+          <h3>异国街角的日常</h3>
+          <p>十二位拍摄者，十二个城市角落，讲述那些不被写进攻略的细节。</p>
+        </a>
+        <a class="xw-topic" href="#xw-stream">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 420'%3E%3Crect width='640' height='420' fill='%232f3f4d'/%3E%3Crect x='80' y='140' width='120' height='220' fill='%23d7c9b2' opacity='.45'/%3E%3Crect x='240' y='90' width='90' height='270' fill='%23d7c9b2' opacity='.3'/%3E%3Ccircle cx='480' cy='140' r='54' fill='%23e8d9c0' opacity='.85'/%3E%3C/svg%3E" alt="一个人的餐桌专题的冷蓝夜色封面">
+          <span class="xw-topic__status">更新至第 4 集</span>
+          <h3>一个人的餐桌</h3>
+          <p>独居、加班、深夜回家，吃饭这件事如何被重新安排。</p>
+        </a>
+        <a class="xw-topic" href="#xw-stream">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 420'%3E%3Crect width='640' height='420' fill='%23344b3a'/%3E%3Cpath d='M0 330 L200 250 L400 320 L640 240 L640 420 L0 420Z' fill='%231e2c21'/%3E%3Ccircle cx='160' cy='120' r='60' fill='%23f3c969' opacity='.8'/%3E%3C/svg%3E" alt="周末去哪里专题的绿色户外封面">
+          <span class="xw-topic__status">更新至第 8 集</span>
+          <h3>周末去哪里</h3>
+          <p>两小时车程以内的短途路线，均由本地创作者实地走过。</p>
+        </a>
+        <a class="xw-topic" href="#xw-stream">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 420'%3E%3Crect width='640' height='420' fill='%23524a6b'/%3E%3Ccircle cx='320' cy='180' r='70' fill='%23e8d9c0' opacity='.8'/%3E%3Crect x='0' y='340' width='640' height='80' fill='%23211d2e'/%3E%3Cpath d='M290 150 l50 30 -50 30z' fill='%23f3c969'/%3E%3C/svg%3E" alt="镜头背后专题的紫色调创作者剪影封面">
+          <span class="xw-topic__status">已完结 · 共 10 集</span>
+          <h3>镜头背后</h3>
+          <p>聊设备之外的准备：如何获得拍摄许可，如何与陌生人建立信任。</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 故事与随笔 -->
+  <section class="xw-section" id="xw-stories">
+    <div class="xw-wrap">
+      <div class="xw-sec-head">
+        <span class="xw-eyebrow">影像随笔</span>
+        <h2>镜头之外，还有一些没剪进去的话</h2>
+        <p>创作者手记与编辑观察，与视频内容互相补充。文字同样经过事实核对。</p>
+      </div>
+      <div class="xw-stories">
+        <article class="xw-story">
+          <h3>拍糖饼铺那天，我差点放弃</h3>
+          <p>老人起初不愿意上镜，说没什么好拍的。我买了两个糖饼，站在旁边吃完，他问我好不好吃。后来就有了这条片子。很多时候，拍摄不是从按下录制键开始的。</p>
+          <span class="xw-story__sig">—— 徐婉，写于首尔</span>
+        </article>
+        <article class="xw-story">
+          <h3>关于“吃瓜”这个词的一点想法</h3>
+          <p>围观的姿态可以是轻的，但不该是轻慢的。我们在策划会里反复确认一件事：镜头里的人是否知道自己在被记录，以及他们是否愿意被这样呈现。这是平台最基础的门槛。</p>
+          <span class="xw-story__sig">—— 编辑部观察</span>
+        </article>
+        <article class="xw-story">
+          <h3>第一百天，我煮了一锅像样的汤</h3>
+          <p>刚搬来的时候，厨房只有一口小锅。我把每次失败的成品也留着，剪进片子里。有观众留言说，看到你煮糊那一次，我才敢开始学做饭。那一刻我觉得这些记录是有用的。</p>
+          <span class="xw-story__sig">—— 安可，独居记录者</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评价 -->
+  <section class="xw-section xw-section--alt" id="xw-reviews">
+    <div class="xw-wrap">
+      <div class="xw-sec-head">
+        <span class="xw-eyebrow">社区口碑</span>
+        <h2>用户怎么说</h2>
+        <p>以下评论来自社区真实反馈，仅做匿名化处理。我们保留每一条不同意见。</p>
+      </div>
+      <div class="xw-reviews">
+        <article class="xw-review">
+          <div class="xw-review__stars">★★★★★</div>
+          <p>画面很稳，声音也干净，没有为了流量硬加情绪。看汉江那条的时候，我甚至把手机放下了十分钟，就看风景。</p>
+          <div class="xw-review__who">@夜行的猫 · 关注两年</div>
+        </article>
+        <article class="xw-review">
+          <div class="xw-review__stars">★★★★☆</div>
+          <p>攻略类内容很实用，尤其是换乘那期，把容易走错的出口标得明明白白。就是更新再快一点就好了。</p>
+          <div class="xw-review__who">@小满的前同事 · 新用户</div>
+        </article>
+        <article class="xw-review">
+          <div class="xw-review__stars">★★★★★</div>
+          <p>喜欢这里不喊口号。访谈里两位店主说话都慢，但每一句都听进去了。这种耐心现在不多见。</p>
+          <div class="xw-review__who">@阿正 · 内容从业者</div>
+        </article>
+        <article class="xw-review">
+          <div class="xw-review__stars">★★★★☆</div>
+          <p>投稿流程挺顺的，审核回复也具体，会告诉你哪一段需要补充说明。对第一次投稿的人很友好。</p>
+          <div class="xw-review__who">@橙子汽水 · 投稿创作者</div>
+        </article>
+        <article class="xw-review">
+          <div class="xw-review__stars">★★★★★</div>
+          <p>美食那期把失败也放进去，反而让我觉得可信。现在很多视频太完美了，看完没什么感觉。</p>
+          <div class="xw-review__who">@周末做饭的人 · 社区用户</div>
+        </article>
+        <article class="xw-review">
+          <div class="xw-review__stars">★★★★☆</div>
+          <p>专题的编排有心思，四集看下来像读完一篇长报道。希望以后能出合集，方便一次看完。</p>
+          <div class="xw-review__who">@林间 · 老观众</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 动态与联系 -->
+  <section class="xw-section" id="xw-contact">
+    <div class="xw-wrap">
+      <div class="xw-double">
+        <div>
+          <span class="xw-eyebrow">企业动态</span>
+          <h2 style="font-size:24px;margin-bottom:18px;">官方发布与社区更新</h2>
+          <ul class="xw-news">
+            <li><time>2026.11.19</time><span>「异国街角的日常」专题第 6 集上线，新增两位首尔本地创作者供稿。</span></li>
+            <li><time>2026.11.15</time><span>创作挑战赛第 12 期开始报名，本期主题为“我窗外的十分钟”，投稿截止 12 月 10 日。</span></li>
+            <li><time>2026.11.08</time><span>官方网站创作工具开放内测，提供脚本灵感、标题建议与剪辑思路三类辅助。</span></li>
+            <li><time>2026.10.30</time><span>平台完成新一轮内容审核标准升级，新增画面授权与人物同意的双重核验。</span></li>
+            <li><time>2026.10.21</time><span>2026 年度原创影像征集进入终评，共有 38 件作品入围，投票通道同步开放。</span></li>
+          </ul>
+        </div>
+        <div class="xw-contact">
+          <h3>合作与投稿</h3>
+          <p>无论你是创作者、品牌方，还是想提供一条线索的观众，都欢迎与我们联系。企业合作请注明需求与时间节点，我们会在两个工作日内回复。</p>
+          <div class="xw-contact__row"><b>商务合作</b><span>brand@xuwankr.example</span></div>
+          <div class="xw-contact__row"><b>内容投稿</b><span>submit@xuwankr.example</span></div>
+          <div class="xw-contact__row"><b>社区反馈</b><span>feedback@xuwankr.example</span></div>
+          <div class="xw-contact__row"><b>工作时间</b><span>周一至周五 10:00 - 19:00</span></div>
+          <div class="xw-contact__btns">
+            <button class="xw-btn xw-btn--amber" id="xwSubmitBtn">我要投稿</button>
+            <button class="xw-btn xw-btn--ghost" id="xwFeedbackBtn">反馈建议</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="xw-section xw-section--alt" id="xw-faq">
+    <div class="xw-wrap">
+      <div class="xw-sec-head" style="text-align:center;margin-left:auto;margin-right:auto;">
+        <span class="xw-eyebrow">帮助中心</span>
+        <h2>常见问题</h2>
+        <p>关于内容、投稿与合作的说明。若仍有疑问，可通过上方反馈入口联系我们。</p>
+      </div>
+      <div class="xw-faq">
+        <details>
+          <summary>平台的内容来源是什么？</summary>
+          <p>内容主要来自签约创作者投稿与编辑团队自制，所有影像均经过授权核验。涉及人物出镜的片段，我们会确认拍摄时已获得当事人同意。</p>
+        </details>
+        <details>
+          <summary>如何成为签约创作者？</summary>
+          <p>先在平台完成至少三条原创作品投稿，审核通过后可申请签约。我们更看重选题的真实性与持续性，而非单条数据的爆发。</p>
+        </details>
+        <details>
+          <summary>投稿后多久会有回复？</summary>
+          <p>一般在三个工作日内给出初审意见。若需要补充授权材料，审核同事会通过站内信说明具体缺项。</p>
+        </details>
+        <details>
+          <summary>可以转载平台内容吗？</summary>
+          <p>未经授权请勿转载。确有需要使用片段的，请通过商务合作邮箱说明用途、平台与时长，我们会协助联系创作者本人。</p>
+        </details>
+        <details>
+          <summary>专题的更新节奏是怎样的？</summary>
+          <p>专题通常按周更新，单集时长控制在五到十五分钟。遇到需要补充核实的内容，我们会延后发布而不是删改后仓促上线。</p>
+        </details>
+        <details>
+          <summary>品牌合作有哪些形式？</summary>
+          <p>包括专题共创、创作者内容合作、线下放映与社区活动支持。我们会在合作前明确内容标注方式，确保观众知情。</p>
+        </details>
+        <details>
+          <summary>如何举报不当内容？</summary>
+          <p>每条作品下方均有举报入口，也可通过反馈邮箱提交。我们承诺对每条举报进行人工复核，并在处理完成后告知结果。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="xw-footer">
+  <div class="xw-wrap">
+    <div class="xw-footer__grid">
+      <div>
+        <div class="xw-footer__brand"><b>徐婉韩国吃瓜</b></div>
+        <p>原创跨地域生活影像社区 · 官方网站</p>
+        <p>持续运营的精品内容平台，以真实、温暖与专业为底色，与创作者共同成长。</p>
+      </div>
+      <div>
+        <h4>站内导航</h4>
+        <ul>
+          <li><a href="#xw-hero">首页</a></li>
+          <li><a href="#xw-focus">焦点推荐</a></li>
+          <li><a href="#xw-stream">热门视频</a></li>
+          <li><a href="#xw-creators">创作者</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于我们</h4>
+        <ul>
+          <li><a href="#xw-analysis">品牌解析</a></li>
+          <li><a href="#xw-topics">专题企划</a></li>
+          <li><a href="#xw-stories">影像随笔</a></li>
+          <li><a href="#xw-contact">企业动态</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>支持与联系</h4>
+        <ul>
+          <li><a href="#xw-faq">帮助中心</a></li>
+          <li><a href="#xw-contact">商务合作</a></li>
+          <li><a href="#xw-contact">内容投稿</a></li>
+          <li><a href="#xw-reviews">社区口碑</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="xw-footer__bottom">
+      <span>© 2026 徐婉韩国吃瓜 官方网站 · 版权所有 · 持续运营中</span>
+      <span>内容均为原创或经授权发布 · 备案号 京ICP备2026000000号</span>
+    </div>
+  </div>
+</footer>
+
+<button class="xw-totop" id="xwTotop" aria-label="回到顶部">↑</button>
+<div class="xw-toast" id="xwToast" role="status" aria-live="polite"></div>
+
+<div class="xw-modal" id="xwModal" role="dialog" aria-modal="true" aria-labelledby="xwModalTitle">
+  <div class="xw-modal__box">
+    <button class="xw-modal__close" id="xwModalClose" aria-label="关闭">×</button>
+    <h3 id="xwModalTitle">提示</h3>
+    <div id="xwModalBody"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ===== 公告轮播 ===== */
+  var noticeItems = document.querySelectorAll('.xw-notice__item');
+  var noticeIndex = 0;
+  if (noticeItems.length > 1) {
+    setInterval(function(){
+      noticeItems[noticeIndex].classList.remove('is-on');
+      noticeIndex = (noticeIndex + 1) % noticeItems.length;
+      noticeItems[noticeIndex].classList.add('is-on');
+    }, 4800);
+  }
+
+  /* ===== 移动端导航 ===== */
+  var burger = document.getElementById('xwBurger');
+  var nav = document.getElementById('xwNav');
+  if (burger && nav) {
+    burger.addEventListener('click', function(){
+      var open = nav.classList.toggle('is-open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      burger.textContent = open ? '×' : '☰';
+    });
+    nav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        nav.classList.remove('is-open');
+        burger.setAttribute('aria-expanded', 'false');
+        burger.textContent = '☰';
+      });
+    });
+  }
+
+  /* ===== Toast ===== */
+  var toast = document.getElementById('xwToast');
+  var toastTimer = null;
+  function showToast(msg){
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add('is-on');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toast.classList.remove('is-on'); }, 2200);
+  }
+
+  /* ===== 搜索反馈 ===== */
+  var searchInput = document.getElementById('xwSearchInput');
+  var searchBtn = document.getElementById('xwSearchBtn');
+  var searchFeedback = document.getElementById('xwSearchFeedback');
+  function doSearch(){
+    var q = (searchInput && searchInput.value || '').trim();
+    if (!q) {
+      showToast('请输入关键词，例如“糖饼铺”“换乘”');
+      return;
+    }
+    var pool = ['首尔','糖饼铺','换乘','访谈','独居','市集','汉江','投稿','专题','创作者'];
+    var hit = pool.filter(function(k){ return q.indexOf(k) !== -1 || k.indexOf(q) !== -1; });
+    if (searchFeedback) {
+      searchFeedback.textContent = hit.length
+        ? '已为你匹配相关方向：' + hit.slice(0,4).join('、') + '，可在热门视频流中查看。'
+        : '暂未匹配到相关内容，试试“城市”“美食”或“创作者”。';
+      searchFeedback.classList.add('is-on');
+    }
+    showToast(hit.length ? '搜索完成，共找到相关方向 ' + hit.length + ' 个' : '暂无匹配，换个关键词试试');
+  }
+  if (searchBtn) searchBtn.addEventListener('click', doSearch);
+  if (searchInput) {
+    searchInput.addEventListener('keydown', function(e){
+      if (e.key === 'Enter') { e.preventDefault(); doSearch(); }
+    });
+  }
+
+  /* ===== 点赞 / 收藏 / 分享 ===== */
+  document.querySelectorAll('.xw-like').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var span = btn.querySelector('span');
+      var base = parseInt(btn.getAttribute('data-num'), 10) || 0;
+      var liked = btn.classList.toggle('is-liked');
+      var now = liked ? base + 1 : base;
+      if (span) span.textContent = now;
+      btn.firstChild.textContent = liked ? '♥ ' : '♡ ';
+      showToast(liked ? '已点赞，感谢支持' : '已取消点赞');
+    });
+  });
+
+  document.querySelectorAll('.xw-save').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var saved = btn.classList.toggle('is-saved');
+      btn.textContent = saved ? '★ 已收藏' : '☆ 收藏';
+      showToast(saved ? '已加入收藏夹' : '已取消收藏');
+    });
+  });
+
+  document.querySelectorAll('.xw-share').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var title = btn.getAttribute('data-title') || '徐婉韩国吃瓜';
+      var link = location.href.split('#')[0] + '#xw-stream';
+      var text = '分享《' + title + '》\n' + link;
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(function(){
+          showToast('链接已复制，可粘贴分享');
+        }).catch(function(){
+          showToast('分享内容：' + title);
+        });
+      } else {
+        showToast('分享内容：' + title);
+      }
+    });
+  });
+
+  /* ===== 标签筛选 ===== */
+  var chips = document.querySelectorAll('.xw-chip');
+  var cards = document.querySelectorAll('#xwStream .xw-card');
+  var empty = document.getElementById('xwEmpty');
+  chips.forEach(function(chip){
+    chip.addEventListener('click', function(){
+      chips.forEach(function(c){ c.classList.remove('is-on'); });
+      chip.classList.add('is-on');
+      var f = chip.getAttribute('data-filter');
+      var shown = 0;
+      cards.forEach(function(card){
+        var ok = (f === 'all') || (card.getAttribute('data-cat') === f);
+        card.style.display = ok ? '' : 'none';
+        if (ok) shown++;
+      });
+      if (empty) empty.style.display = shown ? 'none' : 'block';
+      showToast(f === 'all' ? '已显示全部内容' : '已筛选：' + chip.textContent);
+    });
+  });
+
+  /* ===== 数字滚动 ===== */
+  var counters = document.querySelectorAll('[data-count]');
+  var counted = false;
+  function runCounters(){
+    if (counted) return;
+    counted = true;
+    counters.forEach(function(el){
+      var target = parseInt(el.getAttribute('data-count'), 10) || 0;
+      var start = null;
+      var dur = 1200;
+      function step(ts){
+        if (!start) start = ts;
+        var p = Math.min((ts - start) / dur, 1);
+        var val = Math.floor(target * (1 - Math.pow(1 - p, 3)));
+        el.textContent = val >= 10000 ? (val / 10000).toFixed(1) + '万' : String(val);
+        if (p < 1) requestAnimationFrame(step);
+        else el.textContent = target >= 10000 ? (target / 10000).toFixed(1) + '万' : String(target);
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  var heroEl = document.getElementById('xw-hero');
+  if (heroEl && 'IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if (en.isIntersecting) runCounters(); });
+    }, { threshold: 0.3 });
+    io.observe(heroEl);
+  } else {
+    runCounters();
+  }
+
+  /* ===== 回到顶部 ===== */
+  var toTop = document.getElementById('xwTotop');
+  window.addEventListener('scroll', function(){
+    if (window.scrollY > 520) toTop.classList.add('is-on');
+    else toTop.classList.remove('is-on');
+  }, { passive: true });
+  if (toTop) toTop.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  /* ===== 弹窗 ===== */
+  var modal = document.getElementById('xwModal');
+  var modalTitle = document.getElementById('xwModalTitle');
+  var modalBody = document.getElementById('xwModalBody');
+  var modalClose = document.getElementById('xwModalClose');
+
+  function openModal(title, html){
+    modalTitle.textContent = title;
+    modalBody.innerHTML = html;
+    modal.classList.add('is-on');
+  }
+  function closeModal(){
+    modal.classList.remove('is-on');
+    modalBody.innerHTML = '';
+  }
+  if (modalClose) modalClose.addEventListener('click', closeModal);
+  if (modal) modal.addEventListener('click', function(e){
+    if (e.target === modal) closeModal();
+  });
+  document.addEventListener('keydown', function(e){
+    if (e.key === 'Escape' && modal.classList.contains('is-on')) closeModal();
+  });
+
+  /* ===== 创作者档案 ===== */
+  document.querySelectorAll('.xw-creator').forEach(function(card){
+    card.addEventListener('click', function(){
+      var name = card.getAttribute('data-creator');
+      var bio = card.getAttribute('data-bio');
+      openModal('创作者档案 · ' + name,
+        '<p><strong>擅长方向：</strong>' + (card.querySelector('.xw-creator__field') || {}).textContent + '</p>' +
+        '<p>' + bio + '</p>' +
+        '<p style="font-size:13px;color:#b87407;">关注后可在更新时收到提醒。平台仅展示经本人确认的公开信息。</p>');
+    });
+  });
+
+  /* ===== 投稿弹窗 ===== */
+  var submitBtn = document.getElementById('xwSubmitBtn');
+  if (submitBtn) submitBtn.addEventListener('click', function(){
+    openModal('内容投稿',
+      '<p>请如实填写以下信息，审核同事会在三个工作日内回复。</p>' +
+      '<div class="xw-form-row"><label>创作者昵称</label><input type="text" placeholder="例如：徐婉" id="xwFormName"></div>' +
+      '<div class="xw-form-row"><label>作品方向</label><input type="text" placeholder="例如：城市探索 / 美食烹饪" id="xwFormDir"></div>' +
+      '<div class="xw-form-row"><label>作品简介</label><textarea rows="3" placeholder="简要说明拍摄地点、时间与内容" id="xwFormDesc"></textarea></div>' +
+      '<button class="xw-btn xw-btn--solid" id="xwFormSend" style="margin-top:6px;">提交投稿意向</button>');
+    var send = document.getElementById('xwFormSend');
+    if (send) send.addEventListener('click', function(){
+      var n = document.getElementById('xwFormName').value.trim();
+      var d = document.getElementById('xwFormDir').value.trim();
+      if (!n || !d) { showToast('请填写昵称与作品方向'); return; }
+      closeModal();
+      showToast('投稿意向已记录，我们会尽快联系你');
+    });
+  });
+
+  /* ===== 反馈弹窗 ===== */
+  var feedbackBtn = document.getElementById('xwFeedbackBtn');
+  if (feedbackBtn) feedbackBtn.addEventListener('click', function(){
+    openModal('反馈建议',
+      '<p>你的意见会被人工阅读。涉及具体作品的，请注明标题。</p>' +
+      '<div class="xw-form-row"><label>反馈类型</label><input type="text" placeholder="内容建议 / 体验问题 / 举报" id="xwFbType"></div>' +
+      '<div class="xw-form-row"><label>具体说明</label><textarea rows="3" placeholder="请尽量描述清楚" id="xwFbDesc"></textarea></div>' +
+      '<button class="xw-btn xw-btn--solid" id="xwFbSend" style="margin-top:6px;">提交反馈</button>');
+    var send = document.getElementById('xwFbSend');
+    if (send) send.addEventListener('click', function(){
+      var t = document.getElementById('xwFbType').value.trim();
+      var d = document.getElementById('xwFbDesc').value.trim();
+      if (!t || !d) { showToast('请填写类型与具体说明'); return; }
+      closeModal();
+      showToast('反馈已提交，感谢你的帮助');
+    });
+  });
+
+})();
+</script>
+</body>
+            </html>
